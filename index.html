@@ -12,6 +12,7 @@
       href="assets/images/favicon-32x32.png"
     />
 
+    <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | E-commerce product page</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -29,23 +30,31 @@
     <!-- Header /  Navbar -->
     <header class="header-section">
       <nav class="navbar">
-        <a href="#" class="nav-logo">
-          <img src="assets/images/logo.svg" alt="Logo" class="logo" />
-        </a>
-        <ul class="nav-menu">
-          <li class="nav-item"><a href="#" class="nav-link">Collections</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Men</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Women</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-        </ul>
-        <div class="user-actions">
-          <button class="user-card-btn">
-            <img src="assets/images/icon-cart.svg" alt="User Card" />
-          </button>
-          <button aria-label="User profile" class="user-avatar-btn">
-            <img src="assets/images/image-avatar.png" alt="User Avatar" />
-          </button>
+        <div class="nav-wrapper">
+          <div class="nav-left">
+            <a href="#" class="nav-logo">
+              <img src="assets/images/logo.svg" alt="Logo" class="logo" />
+            </a>
+            <ul class="nav-menu">
+              <li class="nav-item">
+                <a href="#" class="nav-link">Collections</a>
+              </li>
+              <li class="nav-item"><a href="#" class="nav-link">Men</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Women</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="user-actions">
+            <button class="user-cart-btn">
+              <img src="assets/images/icon-cart.svg" alt="User Card" />
+            </button>
+            <button aria-label="User profile" class="user-avatar-btn">
+              <img src="assets/images/image-avatar.png" alt="User Avatar" />
+            </button>
+          </div>
         </div>
       </nav>
     </header>
