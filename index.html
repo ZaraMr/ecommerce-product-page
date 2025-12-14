@@ -3,139 +3,145 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="assets/images/favicon-32x32.png"
     />
-
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/CSS/style.css" />
     <title>Frontend Mentor | E-commerce product page</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <!-- Header /  Navbar -->
-    <header class="header-section">
-      <nav class="navbar">
-        <div class="nav-wrapper">
-          <div class="nav-left">
-            <a href="#" class="nav-logo">
-              <img src="assets/images/logo.svg" alt="Logo" class="logo" />
-            </a>
-            <ul class="nav-menu">
-              <li class="nav-item">
-                <a href="#" class="nav-link">Collections</a>
-              </li>
-              <li class="nav-item"><a href="#" class="nav-link">Men</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Women</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Contact</a>
-              </li>
-            </ul>
-          </div>
-          <div class="user-actions">
-            <button class="user-cart-btn">
-              <img src="assets/images/icon-cart.svg" alt="User Card" />
-            </button>
-            <button aria-label="User profile" class="user-avatar-btn">
-              <img src="assets/images/image-avatar.png" alt="User Avatar" />
-            </button>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <main>
-      <!-- Product Section -->
-      <article class="product-section">
-        <section class="product-gallery">
-          <img
-            src="assets/images/image-product-1.jpg"
-            alt="main view"
-            class="gallery-main"
-          />
-          <div class="gallery-thumbs">
-            <button data-id="1" class="thumb">
-              <img
-                src="assets/images/image-product-1-thumbnail.jpg"
-                alt="Main view"
-              />
-            </button>
-            <button data-id="2" class="thumb">
-              <img
-                src="assets/images/image-product-2-thumbnail.jpg"
-                alt="Side angle"
-              />
-            </button>
-            <button data-id="3" class="thumb">
-              <img
-                src="assets/images/image-product-3-thumbnail.jpg"
-                alt="Top angle"
-              />
-            </button>
-            <button data-id="4" class="thumb">
-              <img
-                src="assets/images/image-product-4-thumbnail.jpg"
-                alt="Detail shot"
-              />
-            </button>
-          </div>
-        </section>
-        <section class="product-content">
-          <h4 class="up-title">Sneaker Company</h4>
-          <h1 class="product-title">Fall Limited Edition Sneakers</h1>
-          <p class="product-context">
-            These low-profile sneakers are your perfect casual wear companion.
-            Featuring a durable rubber outer sole, they’ll withstand everything
-            the weather can offer.
-          </p>
-          <div class="product-prices">
-            <h3 class="price">$125.00 <span class="off-percent">50%</span></h3>
-            <h4 class="old-price">$250.00</h4>
-          </div>
-
-          <div class="product-actions">
-            <div class="numbers-btn">
-              <button aria-label="Decrease quantity" class="btn minus">
-                <img src="assets/images/icon-minus.svg" alt="" />
+      <header class="header-section">
+        <div class="container">
+        <nav class="navbar">
+          <div class="nav-wrapper">
+            <div class="nav-left">
+              <a href="#" class="nav-logo">
+                <img src="assets/Icons/logo.svg" alt="Logo" class="logo" />
+              </a>
+              <ul class="nav-menu">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Collections</a>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link">Men</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Women</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="user-actions">
+              <button class="user-cart-btn butn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20">
+                  <path
+                    d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                    fill="currentColor"
+                    fill-rule="nonzero"
+                  />
+                </svg>
               </button>
-              <span class="product-number">0</span>
-              <button aria-label="Increase quantity" class="btn plus">
-                <img src="assets/images/icon-plus.svg" alt="" />
+              <button aria-label="User profile" class="user-avatar-btn butn">
+                <img src="assets/images/image-avatar.png" alt="User Avatar" />
               </button>
             </div>
-            <button aria-label="Add product to cart" class="add-btn">
-              <img src="assets/images/icon-cart.svg" alt="" /> Add to cart
-            </button>
+           </nav> 
           </div>
-        </section>
-      </article>
-      <!-- Cart aside -->
-      <aside class="cart">
-        <h2 class="cart-title">Cart</h2>
-        <div class="cart-items"></div>
-      </aside>
-    </main>
-    <!-- attribution -->
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+        
+      </header>
+
+      <main>
+        <!-- Product Section -->
+        <article class="product-section">
+          <section class="product-gallery">
+            <img
+              src="assets/images/image-product-1.jpg"
+              alt="main view"
+              class="gallery-main"
+            />
+            <div class="gallery-thumbs">
+              <button data-id="1" class="thumb butn">
+                <img
+                  src="assets/images/image-product-1-thumbnail.jpg"
+                  alt="Main view"
+                />
+              </button>
+              <button data-id="2" class="thumb butn">
+                <img
+                  src="assets/images/image-product-2-thumbnail.jpg"
+                  alt="Side angle"
+                />
+              </button>
+              <button data-id="3" class="thumb butn">
+                <img
+                  src="assets/images/image-product-3-thumbnail.jpg"
+                  alt="Top angle"
+                />
+              </button>
+              <button data-id="4" class="thumb butn">
+                <img
+                  src="assets/images/image-product-4-thumbnail.jpg"
+                  alt="Detail shot"
+                />
+              </button>
+            </div>
+          </section>
+          <section class="product-content">
+            <h4 class="up-title">Sneaker Company</h4>
+            <h1 class="product-title">Fall Limited Edition Sneakers</h1>
+            <p class="product-context">
+              These low-profile sneakers are your perfect casual wear companion.
+              Featuring a durable rubber outer sole, they’ll withstand
+              everything the weather can offer.
+            </p>
+            <div class="product-prices">
+              <div class="real-prices">
+                <h3 class="price">$125.00</h3>
+                <h3 class="off-percent">50%</h3>
+              </div>
+              <h4 class="old-price">$250.00</h4>
+            </div>
+
+            <div class="product-actions">
+              <div class="numbers-btn">
+                <button aria-label="Decrease quantity" class="btn minus butn">
+                  <img src="assets/Icons/icon-minus.svg" alt="" />
+                </button>
+                <span class="product-number">0</span>
+                <button aria-label="Increase quantity" class="btn plus butn">
+                  <img src="assets/Icons/icon-plus.svg" alt="" />
+                </button>
+              </div>
+              <button aria-label="Add product to cart" class="add-btn butn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20">
+                  <path
+                    d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                    fill="currentColor"
+                    fill-rule="nonzero"
+                  />
+                </svg>
+                Add to cart
+              </button>
+            </div>
+          </section>
+        </article>
     </div>
+
+        <!-- Cart aside -->
+        <aside class="cart">
+          <h2 class="cart-title">Cart</h2>
+          <div class="cart-items"></div>
+        </aside>
+      </main>
+      <!-- attribution -->
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/ZaraMr">Zahra Moradi</a>.
+      </div>
   </body>
 </html>
