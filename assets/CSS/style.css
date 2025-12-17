@@ -8,14 +8,16 @@
   box-sizing: border-box;
 }
 
-/* Base elements */
-/* html {
-  overflow: hidden;
-} */
+html {
+  scrollbar-gutter: stable;
+}
 
 body {
   font-family: "Kumbh Sans", sans-serif;
-  /* overflow: hidden; */
+}
+
+body.cart-active {
+  overflow: hidden;
 }
 
 .container {
@@ -109,8 +111,8 @@ body {
   gap: 50px;
 }
 
-.header-section .user-actions .user-cart-btn {
-  color: #69707d;
+.header-section .user-actions .user-cart-btn svg {
+  fill: #69707d;
   transition: 0.3s ease;
 }
 
@@ -122,11 +124,6 @@ body {
   cursor: pointer;
   color: var(--dark-blue);
 }
-
-/* .header-section .user-actions .user-cart-btn img {
-  width: 25px;
-  color: var(--black);
-} */
 
 .header-section .user-actions .user-avatar-btn {
   border: 3px solid transparent;
@@ -291,8 +288,34 @@ body {
   color: var(--orange);
 }
 
+/* cart styling */
 .cart {
   display: none;
+}
+
+.cart.cart-active {
+  position: fixed;
+  top: 95px;
+  right: 150px;
+  width: 380px;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 12px;
+  z-index: 1000;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.cart .cart-title {
+  padding: 28px 30px;
+  font-size: var(--font-size-l);
+  border-bottom: 1px solid hsl(220, 14%, 75%);
+}
+
+.header-section .user-actions .user-cart-btn svg.cart-btn-active {
+  fill: black;
 }
 
 .header-section .navbar .nav-wrapper .nav-left .menu {
@@ -330,6 +353,10 @@ body {
     overflow: hidden;
   }
 
+  body.cart-active {
+    overflow: hidden;
+  }
+
   .header-section .navbar .nav-wrapper .nav-left .logo {
     width: 110px;
   }
@@ -339,6 +366,7 @@ body {
     width: 15px;
     height: 15px;
     fill: #69707d;
+    transition: 0.3 ease;
   }
 
   .header-section .navbar .nav-wrapper .nav-left .menu:hover {
@@ -411,6 +439,32 @@ body {
 
   .header-section .navbar .user-actions .user-avatar-btn img {
     width: 30px;
+  }
+
+  .cart {
+    position: fixed;
+  }
+
+  .cart.cart-active {
+    display: flex;
+    flex-direction: column;
+    top: 90px;
+    left: 49%;
+    transform: translateX(-50%);
+    width: 95%;
+    height: 500px;
+    background-color: white;
+    border-radius: 20px;
+  }
+
+  .cart .cart-title {
+    padding: 40px 40px;
+    font-size: var(--font-size-xl);
+    border-bottom: 1px solid gray;
+  }
+
+  .header-section .user-actions .user-cart-btn svg.cart-btn-active {
+    fill: black;
   }
 
   .product-section {
