@@ -256,6 +256,15 @@ body.cart-active {
 
 .product-section .product-content .numbers-btn .product-number {
   font-weight: 600;
+  min-width: 24px;
+  font-variant-numeric: tabular-nums;
+  flex-shrink: 0;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.product-number.animate {
+  transform: scale(1.15);
+  opacity: 0.6;
 }
 
 .product-section .product-content .product-actions .add-btn {

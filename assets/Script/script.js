@@ -5,6 +5,9 @@ const menuList = document.querySelector(".nav-menu");
 const closeBtn = document.querySelector(".close-btn");
 const cartBtn = document.querySelector(".user-cart-btn");
 const cartBox = document.querySelector(".cart");
+const minusBtn = document.querySelector(".minus");
+const plusBtn = document.querySelector(".plus");
+const numberEl = document.querySelector(".product-number");
 
 const openMenu = function () {
   menuList.classList.add("show-mobile-menu");
@@ -48,3 +51,29 @@ const handleOutsideClick = function (e) {
 };
 
 document.addEventListener("click", handleOutsideClick);
+
+// activate plus and minus buttons
+let count = 0;
+
+function updateNumber() {
+  numberEl.classList.add("animate");
+  numberEl.textContent = count;
+
+  setTimeout(() => {
+    numberEl.classList.remove("animate");
+  }, 150);
+}
+
+function addNumber() {
+  count++;
+  updateNumber();
+}
+
+function minusNumber() {
+  if (count <= 0) return;
+  count--;
+  updateNumber();
+}
+
+plusBtn.addEventListener("click", addNumber);
+minusBtn.addEventListener("click", minusNumber);
